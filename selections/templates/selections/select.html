@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+  <h1>일정 선택</h1>
+  {% if bft == "luxurious" %}
+  <form action="" method="POST">
+    
+    <table>
+      <tr>
+        <td><label for="bft">아침</label></td>
+        <td><select id="bft" name="bft">
+              <option value="luxurious" selected>Luxurious</option>
+              <option value="reasonable">Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act1">오전활동 1</label></td>
+        <td><select id="act1" name="act1">
+              <option value="luxurious" selected>Luxurious</option>
+              <option value="reasonable">Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act2">오전활동 2</label></td>
+        <td><select id="act2" name="act2">
+              <option value="luxurious" selected>Luxurious</option>
+              <option value="reasonable">Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lun">점심</label></td>
+        <td><select id="lun" name="lun">
+              <option value="luxurious" selected>Luxurious</option>
+              <option value="reasonable">Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act3">오후활동 1</label></td>
+        <td><select id="act3" name="act3">
+               <option value="luxurious" selected>Luxurious</option>
+               <option value="reasonable">Reasonable</option>
+               <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act4">오후활동 2</label></td>
+        <td><select id="act4" name="act4">
+              <option value="luxurious" selected>Luxurious</option>
+              <option value="reasonable">Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="din">저녁</label></td>
+        <td><select id="din" name="din">
+              <option value="luxurious" selected>Luxurious</option>
+              <option value="reasonable">Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+    </table>
+   
+  {% elif bft == "reasonable" %}
+  <form action="" method="POST">
+    
+    <table>
+      <tr>
+        <td><label for="bft">아침</label></td>
+        <td><select id="bft" name="bft">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" selected>Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act1">오전활동 1</label></td>
+        <td><select id="act1" name="act1">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" selected>Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act2">오전활동 2</label></td>
+        <td><select id="act2" name="act2">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" >Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lun">점심</label></td>
+        <td><select id="lun" name="lun">
+              <option value="luxurious" >Luxurious</option>
+               <option value="reasonable" selected>Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act3">오후활동 1</label></td>
+        <td><select id="act3" name="act3">
+               <option value="luxurious" >Luxurious</option>
+               <option value="reasonable" selected>Reasonable</option>
+               <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act4">오후활동 2</label></td>
+        <td><select id="act4" name="act4">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" selected>Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="din">저녁</label></td>
+        <td><select id="din" name="din">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" selected>Reasonable</option>
+              <option value="cheap">Cheap</option>
+            </select>
+        </td>
+      </tr>
+    </table>
+    
+  {% elif bft == "cheap" %}
+  <form action="" method="POST">
+    
+    <table>
+      <tr>
+        <td><label for="bft">아침</label></td>
+        <td><select id="bft" name="bft">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" >Reasonable</option>
+              <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act1">오전활동 1</label></td>
+        <td><select id="act1" name="act1">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" >Reasonable</option>
+              <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act2">오전활동 2</label></td>
+        <td><select id="act2" name="act2">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" >Reasonable</option>
+              <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lun">점심</label></td>
+        <td><select id="lun" name="lun">
+              <option value="luxurious" >Luxurious</option>
+               <option value="reasonable" >Reasonable</option>
+              <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act3">오후활동 1</label></td>
+        <td><select id="act3" name="act3">
+               <option value="luxurious" >Luxurious</option>
+               <option value="reasonable" >Reasonable</option>
+               <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="act4">오후활동 2</label></td>
+        <td><select id="act4" name="act4">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" >Reasonable</option>
+              <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="din">저녁</label></td>
+        <td><select id="din" name="din">
+              <option value="luxurious" >Luxurious</option>
+              <option value="reasonable" >Reasonable</option>
+              <option value="cheap" selected>Cheap</option>
+            </select>
+        </td>
+      </tr>
+    </table>
+
+{% endif %}    
+    
+    <br>
+    <input type="submit" value="확인"/>
+  
+  </form>
+  
+
+
+{% endblock %}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

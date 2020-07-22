@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+  <h1>여행 테마 선택</h1>
+  
+  <form action="{% url 'selections:create' %}" method="POST">
+    {% csrf_token %}
+    <label for="bft">어떤 테마의 여행을 하시겠습니까?</label>
+    <select id="bft" name="bft">
+      <option value="luxurious">Luxurious</option>
+      <option value="reasonable">Reasonable</option>
+      <option value="cheap">Cheap</option>
+    </select>
+    
+    <br>
+    <input type="submit" value="확인"/>
+  </form>
+  
+{% endblock %}
