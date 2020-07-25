@@ -5,9 +5,9 @@
 {% block body %}
 
   <h1>일정 선택</h1>
+  <form action="{% url 'selections:update' %}" method="POST">
+  {% csrf_token %}
   {% if bft == "luxurious" %}
-  <form action="" method="POST">
-    
     <table>
       <tr>
         <td><label for="bft">아침</label></td>
@@ -75,8 +75,6 @@
     </table>
    
   {% elif bft == "reasonable" %}
-  <form action="" method="POST">
-    
     <table>
       <tr>
         <td><label for="bft">아침</label></td>
@@ -144,8 +142,6 @@
     </table>
     
   {% elif bft == "cheap" %}
-  <form action="" method="POST">
-    
     <table>
       <tr>
         <td><label for="bft">아침</label></td>

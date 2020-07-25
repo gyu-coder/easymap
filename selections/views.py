@@ -50,3 +50,25 @@ def create(request):
     # context = {'theme': theme }
     
     return render(request, 'selections/select.html', context)
+    
+def update(request):
+    
+    bft = request.POST['bft']
+    act1 = request.POST['act1']
+    act2 = request.POST['act2']
+    lun = request.POST['lun']
+    act3 = request.POST['act3']
+    act4 = request.POST['act4']
+    din = request.POST['din']
+    theme = Theme(bft=bft, act1=act1, act2=act2, lun=lun, act3=act3, act4=act4, din=din)
+    theme.save()
+    
+    print(theme)
+    
+    return redirect('selections:index')
+    
+#def confirm(request):
+    
+    #theme = Theme.objects.get(user=request.user)
+    
+def 

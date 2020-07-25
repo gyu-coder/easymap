@@ -4,6 +4,7 @@ from django.db import models
 
 class Theme(models.Model):
     
+    # user = models.ForeignKey
     bft = models.CharField(max_length=264)
     act1 = models.CharField(max_length=264)
     act2 = models.CharField(max_length=264)
@@ -14,3 +15,7 @@ class Theme(models.Model):
     
     def __str__(self):
         return f'{self.bft}: {self.din}'
+        
+class Location(models.Model):
+    
+    country = models.
